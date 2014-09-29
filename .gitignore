@@ -1,0 +1,12 @@
+tmp
+bin
+*.log
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+public/system/*
+coverage
+
+# Ignore application configuration
+/config/application.yml
+public/assets/*

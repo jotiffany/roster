@@ -1,0 +1,31 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+    - !ruby/regexp /old_and_unused\.rb$/
+
+Documentation:
+  Enabled: false
+
+Style/HashSyntax:
+  Enabled: true
+  EnforcedStyle: hash_rockets
+
+Style/MethodLength:
+  Max: 30
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/LineLength:
+  Max: 150
+
+Style/ClassLength:
+  Max: 120
